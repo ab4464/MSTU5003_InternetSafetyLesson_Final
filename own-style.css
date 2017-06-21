@@ -1,0 +1,98 @@
+   html,
+   body {
+     font-family: 'Open Sans', 'Open Sans Condensed', sans-serif;
+   }
+   
+   h2,
+   h3,
+   h4 {
+     font-weight: bold;
+   }
+   
+  
+   
+   
+   .btn a {
+     color: white;
+   }
+   
+   .home-body {
+     width: 60%;
+   }
+
+   
+   .role-icons {
+     max-width: 250px;
+     padding: 20px;
+   }
+   
+   .icon-box {
+     width: 60%;
+   }
+   
+   .login-body {
+     background-color: #FAFAFA;
+   }
+   
+    .login-box {
+     width: 50%;
+   }
+   
+   
+   .jumbotron {
+     background-image: url("https://www.colourbox.com/preview/16921115-thin-line-internet-of-things-white-seamless-pattern.jpg");
+     background-repeat: repeat-x;
+   }
+   
+   .jumbotron-box {
+     background: white;
+     opacity: 0.96;
+     padding: 25px 25px;
+   }
+   
+   .teacher-banner {
+     border-top: solid #E6E6E6 3px;
+     border-bottom: solid #E6E6E6 3px;
+     background-image: url("http://training.cert.gov.om/moodle3/pluginfile.php/1/theme_lambda/slide3image/1462683534/cq5dam.web.1400.350.desktop.jpeg");
+     background-repeat: repeat-x;
+     width: auto;
+     height: auto;
+   }
+   
+   .teacher-text-box {
+     background: white;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     padding: 25px 25px;
+   }
+   
+   .activity-box {
+     background-color: #F9F9F9;
+     padding: 20px;
+   }
+   
+   .hr-title {
+     margin-top: -3px;
+   }
+   
+   
+   .buttonBox {
+     background: white;
+     padding: 25px 25px;
+     border: solid 1px #DDDDDD;
+   }
+   
+   .numberCircleLeft {
+     border-radius: 50%;
+     width: 36px;
+     height: 36px;
+     background: #2F98E9;
+     color: white;
+     text-align: center;
+     padding: 3px 0px 0px 0px;
+     font-size: 20px;
+     font-weight: bold;
+     display: inline-block;
+     margin-left: 40px;
+     margin: 10px;
+   }
