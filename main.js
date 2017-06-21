@@ -100,6 +100,26 @@ function fullNameResponse(e) {
 
 
 /***********************************
+STUDENT VIEW: ACTIVITY CHOICES
+************************************/
+
+var Activities =
+    ["To Post or not to Post?","Chatting Online","Password Security","Internet Safety Infographic"] ;
+
+   function selectActivity() {
+    var activityNumber = document.getElementById("activity-numbers").value ;
+    var activity = Activities[activityNumber] ;
+    document.getElementById("activity-name").innerHTML = activity ;
+   }
+
+   document.getElementById("activity-numbers").onclick = selectActivity ;
+
+
+
+
+
+
+/***********************************
 STUDENT VIEW: ACTIVITY 1 - POPOVERS
 ************************************/
 

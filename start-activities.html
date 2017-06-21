@@ -23,34 +23,64 @@
       <button type="button" class="btn navbar-btn btn-success"> <a href="teacher-dashboard.html">Teacher Dashboard</a></button>
     </div>
   </nav>
-  <div class="container home-body" align="center">
-    <h1 align="center"><strong>Internet Safety Activities</strong></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor iat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    <h3 align="center">You Chose:</h3>
-
-  <br>
-
-  <!-- About Cassie -->
 
 
-    <div class="row" align="center">
-      <img src="http://i740.photobucket.com/albums/xx43/Archtech87/Cat.png">
-      <div class="caption">
-        <h4>Cassie the Cat!</h4>
-      </div>
+    <!-- About The User -->
 
-      <div class="panel panel-info" style="margin-top: 20px;">
-        <div class="panel-heading">
-          <h3 class="panel-title ">Read Cassie's Profile:  </h3>
-        </div>
-        <div class="panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor iat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
-          <button class="btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-forward" ></span><a href="start-activities.html">&nbsp;Let's Start!</a></button>
-        </div>
-      </div>
+    <div class="modal fade" id="myModalActivites" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                     <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                         <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                           <h4 class="modal-title" id="myModalLabel">What's Your Name?</h4>
+                         </div>
+                         <div class="modal-body">
+                           <form name="profile">
+               <div class="form-group">
+                 <input id="fullName" type="text" class="form-control" placeholder="Your First and Last Name" name="fullName">
+               </div>
+               </form>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Go Back</button>
+                           <button type="button" class="btn btn-primary" onclick="fullNameResponse()"><a href="start-activities.html"> Submit</a></button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+            <div class="container home-body" align="center">
+              <h3><span id="printFullName"></span></h3>
+              </div>
+
+
+  <div class="container home-body">
+    <h1 align="center"><strong>Hi, <span id="printFullName"></span>!</strong></h1>
+    <h3 align="center">Pick an activity from the drop down menu:</h3>
+<br>
+<div class="row">
+    <div class="dropdown">
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-4" >
+
+    <form>
+<h4 style="float:right">I choose: </h4>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 col-xl-4" style="float:left">
+   <select id="activity-numbers" class="form-control">
+     <option value="0" >Activity 1: </option>
+     <option value="1" >Activity 2: </option>
+     <option value="2" >Activity 3: </option>
+     <option value="3" >Activity 4: </option>
+   </select>
+ </div>
+<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+    <h4  style="float:left" id="activity-name">To Post or Not to Post?</h4>.
     </div>
-  </div>
+  </form>
 
+  </div>
+</div>
+
+ </div>
 
 
 
