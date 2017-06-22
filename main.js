@@ -91,32 +91,53 @@ function penguinIconRollOut(penguin_icon) {
 /***********************************
 STUDENT VIEW: USER PROFILE
 ************************************/
-
+$(window).on('load',function(){
+        $('#myModalProfile').modal('show');
+    });
 
 function fullNameResponse(e) {
   var fullName = document.querySelector('#fullName');
   document.getElementById("printFullName").innerHTML = fullName.value;
 }
 
+$(document).ready(function(){
+    $('#fullName').bind("keypress", function (e) { // Disable the Enter Key so that it does not do anything
+        if (e.keyCode == 13) return false;
+    });
+});
+
+
+$('#myModalProfile').modal({ backdrop: 'static', keyboard: true }); // Disable escape or clicking ouutside the modal
+
+
+
+/***********************************
+TEST
+************************************/
+
+
+	function gotosite() {
+		var URL = document.event_type_selector.url_list.options[document.event_type_selector.url_list.selectedIndex].value; window.location.href = URL;
+	}
+
+
+
 
 /***********************************
 STUDENT VIEW: ACTIVITY CHOICES
 ************************************/
 
+
 var Activities =
     ["To Post or not to Post?","Chatting Online","Password Security","Internet Safety Infographic"] ;
 
    function selectActivity() {
-    var activityNumber = document.getElementById("activity-numbers").value ;
-    var activity = Activities[activityNumber] ;
+    var activityNumber = document.getElementById("activity-numbers").value.split(',') ;
+    var activity = Activities[activityNumber[0]] ;
     document.getElementById("activity-name").innerHTML = activity ;
    }
 
    document.getElementById("activity-numbers").onclick = selectActivity ;
-
-
-
-
 
 
 /***********************************

@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="own-style.css">
+
 </head>
 
 
@@ -25,65 +26,63 @@
   </nav>
 
 
-    <!-- About The User -->
+    <!-- About The User - Modal Login-->
 
-    <div class="modal fade" id="myModalActivites" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                     <div class="modal-dialog" role="document">
-                       <div class="modal-content">
-                         <div class="modal-header">
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                           <h4 class="modal-title" id="myModalLabel">What's Your Name?</h4>
-                         </div>
-                         <div class="modal-body">
-                           <form name="profile">
-               <div class="form-group">
-                 <input id="fullName" type="text" class="form-control" placeholder="Your First and Last Name" name="fullName">
-               </div>
-               </form>
-                         </div>
-                         <div class="modal-footer">
-                           <button type="button" class="btn btn-default" data-dismiss="modal">Go Back</button>
-                           <button type="button" class="btn btn-primary" onclick="fullNameResponse()"><a href="start-activities.html"> Submit</a></button>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-            <div class="container home-body" align="center">
-              <h3><span id="printFullName"></span></h3>
+
+    <div class="modal fade" id="myModalProfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+
+                <h4 class="modal-title" id="myModalLabel">User Profile</h4>
               </div>
+              <div class="modal-body">
+                <p>What's your full name?</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Full Name" id="fullName">
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button id="goBack" type="button" class="btn btn-danger"><a href="cassie-activity-start.html">Go Back</a></button>
+                <button id="submitName" type="submit" class="btn btn-success" onclick="fullNameResponse()" data-dismiss="modal" href="#">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-  <div class="container home-body">
+
+
+    <!-- Pick an Activity -->
+
+  <div class="container container-45">
     <h1 align="center"><strong>Hi, <span id="printFullName"></span>!</strong></h1>
     <h3 align="center">Pick an activity from the drop down menu:</h3>
 <br>
 <div class="row">
-    <div class="dropdown">
-  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-4" >
 
-    <form>
-<h4 style="float:right">I choose: </h4>
-</div>
-<div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 col-xl-4" style="float:left">
-   <select id="activity-numbers" class="form-control">
-     <option value="0" >Activity 1: </option>
-     <option value="1" >Activity 2: </option>
-     <option value="2" >Activity 3: </option>
-     <option value="3" >Activity 4: </option>
+   <select id="activity-numbers" class="form-control dropdown-activities">
+     <option value="" selected="selected" disabled="disabled">Select an activity...</option>
+     <option value="0, index.html" >Activity 1: </option>
+     <option value="1, login-page.html" >Activity 2: </option>
+     <option value="2, index.html" >Activity 3: </option>
+     <option value="3, teacher-dashboard.html" >Activity 4: </option>
    </select>
  </div>
-<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
-    <h4  style="float:left" id="activity-name">To Post or Not to Post?</h4>.
+ <br>
+<div class="row">
+    <div class="well" id="activity-name"></div>
     </div>
-  </form>
+<button type="button" name="button" onclick="gotosite()">Submit</button>
 
   </div>
-</div>
-
- </div>
 
 
 
+
+
   <br>
   <br>
   <br>
@@ -93,6 +92,16 @@
   <br>
   <br>
   <br>
+  <form name="event_type_selector" method="post" action="#">
+	<select name="url_list" class="event-type-selector-dropdown">
+		<option value="" selected="selected" disabled="disabled">Please select...</option>
+		<option value="index.html">YouTube</option>
+		<option value="?id=2">Option 2</option>
+		<option value="?id=3">Option 3</option>
+	</select>
+</form>
+<button type="button" name="button" onclick="gotosite()">Submit</button>
+
 
 
 
