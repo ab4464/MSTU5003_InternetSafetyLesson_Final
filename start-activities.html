@@ -38,6 +38,7 @@
               </div>
               <div class="modal-body">
                 <p>What's your full name?</p>
+                <p onload="pennyPenguinChoice()"></p>
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Full Name" id="fullName">
@@ -45,7 +46,7 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button id="goBack" type="button" class="btn btn-danger"><a href="cassie-activity-start.html">Go Back</a></button>
+                <button id="goBack" type="button" class="btn btn-danger"><a href="character-directory.html">Go Back</a></button>
                 <button id="submitName" type="submit" class="btn btn-success" onclick="fullNameResponse()" data-dismiss="modal" href="#">Submit</button>
               </div>
             </div>
@@ -62,14 +63,15 @@
     <h3 align="center">Pick an activity from the drop down menu:</h3>
 <br>
 <div class="row">
-
-   <select id="activity-numbers" class="form-control dropdown-activities">
+<form name="event_type_selector" method="post" action="#">
+   <select id="activity-numbers" class="form-control event-type-selector-dropdown" name="url_list">
      <option value="" selected="selected" disabled="disabled">Select an activity...</option>
      <option value="0, index.html" >Activity 1: </option>
      <option value="1, login-page.html" >Activity 2: </option>
      <option value="2, index.html" >Activity 3: </option>
      <option value="3, teacher-dashboard.html" >Activity 4: </option>
    </select>
+   </form>
  </div>
  <br>
 <div class="row">
@@ -92,15 +94,7 @@
   <br>
   <br>
   <br>
-  <form name="event_type_selector" method="post" action="#">
-	<select name="url_list" class="event-type-selector-dropdown">
-		<option value="" selected="selected" disabled="disabled">Please select...</option>
-		<option value="index.html">YouTube</option>
-		<option value="?id=2">Option 2</option>
-		<option value="?id=3">Option 3</option>
-	</select>
-</form>
-<button type="button" name="button" onclick="gotosite()">Submit</button>
+
 
 
 

@@ -288,6 +288,10 @@
                   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" style="float:right" >Submit</button>
                   <button type="button" class="btn btn-danger" onclick="resetSurvey(event)">Reset</button>
                 </div>
+</form>
+
+
+<!-- Modal -->
 
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                   <div class="modal-dialog" role="document">
@@ -304,12 +308,25 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">No, Go Back</button>
-                        <button type="button" class="btn btn-primary">Yes, Submit</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Yes, Submit</button>
                       </div>
                     </div>
                   </div>
                 </div>
-              </form>
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Thank you so much for your response!</h4>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"onclick="resetSurvey(event)">OK</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>

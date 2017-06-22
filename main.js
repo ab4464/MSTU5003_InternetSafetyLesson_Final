@@ -89,6 +89,89 @@ function penguinIconRollOut(penguin_icon) {
 
 
 /***********************************
+STUDENT VIEW: CHOOSE A CHARACTER - ON CLICK
+************************************/
+
+
+function showHideCat() {
+    var cassieCat = document.getElementById('showHideCat');
+    if (cassieCat.style.display === 'none') {
+        cassieCat.style.display = 'block';
+    } else {
+        cassieCat.style.display = 'none';
+    }
+    hideDogPenguin();
+}
+
+function showHideDog() {
+    var brutusDog = document.getElementById('showHideDog');
+    if (brutusDog.style.display === 'none') {
+        brutusDog.style.display = 'block';
+    } else {
+        brutusDog.style.display = 'none';
+    }
+    hideCatPenguin();
+}
+
+function showHidePenguin() {
+    var pennyPenguin = document.getElementById('showHidePenguin');
+    if (pennyPenguin.style.display === 'none') {
+        pennyPenguin.style.display = 'block';
+    } else {
+        pennyPenguin.style.display = 'none';
+    }
+    hideDogCat();
+}
+
+function hideCatPenguin() {
+  var cassieCat = document.getElementById('showHideCat');
+  var pennyPenguin = document.getElementById('showHidePenguin');
+  if (cassieCat.style.display = 'block' ) {
+      cassieCat.style.display = 'none';
+    }
+  if (pennyPenguin.style.display = 'block') {
+    pennyPenguin.style.display = 'none';
+  }
+}
+
+function hideDogCat() {
+  var cassieCat = document.getElementById('showHideCat');
+  var brutusDog = document.getElementById('showHideDog');
+  if (cassieCat.style.display = 'block' ) {
+      cassieCat.style.display = 'none';
+    }
+  if (brutusDog.style.display = 'block') {
+      brutusDog.style.display = 'none';
+  }
+}
+
+function hideDogPenguin() {
+  var brutusDog = document.getElementById('showHideDog');
+  var pennyPenguin = document.getElementById('showHidePenguin');
+  if (brutusDog.style.display = 'block') {
+      brutusDog.style.display = 'none';
+    }
+  if (pennyPenguin.style.display = 'block') {
+    pennyPenguin.style.display = 'none';
+  }
+}
+
+/***********************************
+STUDENT VIEW: CHOOSE A CHARACTER - LOAD CHARACTER
+************************************/
+
+function pennyPenguinChoice() {
+  var pennyPenguinChosen = document.getElementById("pennyPenguinChosen").name;
+  document.getElementById("pennyPenguinChosen").innerHTML = pennyPenguinChosen;
+  pennyPenguinChoice();
+}
+
+
+
+
+
+
+/***********************************
 STUDENT VIEW: USER PROFILE
 ************************************/
 $(window).on('load',function(){
@@ -116,10 +199,13 @@ TEST
 ************************************/
 
 
-	function gotosite() {
-		var URL = document.event_type_selector.url_list.options[document.event_type_selector.url_list.selectedIndex].value; window.location.href = URL;
-	}
+function gotosite() {
+  var activityNumber = document.getElementById("activity-numbers").value.split(',');
+  var activity = activityNumber[1];
 
+  var URL = document.event_type_selector.url_list.options[document.event_type_selector.url_list.selectedIndex].activity;
+  window.location.href = URL;
+}
 
 
 
@@ -174,6 +260,7 @@ function resetSurvey(event) {
   textinputE1.value = "";
 
 }
+
 
 
 

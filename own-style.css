@@ -94,9 +94,19 @@
      margin: 10px;
    }
 
-   .dropdown-activities {
-
+   #showHideCat,
+   #showHideDog,
+   #showHidePenguin {
+       width: 100%;
+       padding: 80px;
+       text-align: center;
+       background-color: white;
+       margin-top:50px;
    }
+
+.initiallyHidden {
+  display: none;
+}
 
    .well-activities {
      font-size: 30px;
