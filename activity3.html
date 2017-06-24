@@ -1,0 +1,190 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="own-style.css">
+</head>
+
+
+<body>
+  <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <button type="button" class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#exitActivitiesModal"><span class="glyphicon glyphicon-remove"></span> <a href="student-view.html"> Exit Activities</a></button>
+    </div>
+  </nav>
+
+  <!-- Exit Modal -->
+
+  <div class="modal fade" id="exitActivitiesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Are you sure you want to exit the activities?</h4>
+        </div>
+        <div class="modal-body">
+          If you exit the activities you will need to start over.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger"><a href="student-view.html">Yes, I'd like to exit</a></button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">No, I will continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h1>Internet Safety Activities</h1>
+    <span class="label label-info">Student View</span>
+    <hr>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+          <form name="activity_selector" method="post" action="#">
+            <select name="activity_list" class="form-control activity-selector-dropdown" id="activity-numbers">
+              <option value="" selected="selected" disabled="disabled">Select an activity...</option>
+              <option value="0" >Activity 1: To Post or not to Post?  </option>
+              <option value="1" >Activity 2: Chatting Online </option>
+              <option value="2" >Activity 3: Password Security </option>
+              <option value="3" >Activity 4: Internet Safety Vocabulary Quiz </option>
+              <option value="4" >Activity 5: Internet Safety Infographic</option>
+              <option value="5" >I've completed all of the activities!</option>
+            </select>
+          </form>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <button type="button" class="btn btn-success" name="button" onclick="goToSite()">Submit</button>
+
+
+          <br>
+          <br>
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- Activity 3 -->
+    <div class="container activity-box">
+      <h2>Activity 3: Password Security</h2>
+      <hr class="hr-title">
+      <h3>Identify Strong vs. Weak Passwords</h3>
+      <p><strong>Directions:</strong> Think about what you've learned about strong and weak passwords. Identify strong and weak passwords by using the green check mark to accept strong passwords and the red x to reject weak passwords.</p>
+      <br/>
+      <!-- Activity 3: Q1 -->
+      <div class="row">
+        <div class="col-xs-8 col-sm-8 col-md-4 col-lg-5 col-xl-4">
+          <h4>Password:</h4>
+          <div class="well well-sm">PASSWORD12345</div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-2">
+          <button class="btn btn-success btn-xs glyphicon glyphicon-ok" style="margin-top:45px; margin-left:-20px;" onclick="thatsIncorrect()"></button>
+          <button class="btn btn-danger btn-xs glyphicon glyphicon-remove" style="margin-top:45px;" onclick="thatsCorrect()"></button>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6">
+          <h4>Explain Your Answer:</h4>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Why would you accept or reject this password?">
+            <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Submit!</button>
+                  </span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Activity 3: Q2 -->
+      <div class="row">
+        <div class="col-xs-8 col-sm-8 col-md-4 col-lg-5 col-xl-4">
+          <h4>Password:</h4>
+          <div class="well well-sm">IL0veC@tz!</div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-2">
+          <button class="btn btn-success btn-xs glyphicon glyphicon-ok" style="margin-top:45px; margin-left:-20px;" onclick="thatsCorrect()"></button>
+          <button class="btn btn-danger btn-xs glyphicon glyphicon-remove" style="margin-top:45px;" onclick="thatsIncorrect()"></button>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6">
+          <h4>Explain Your Answer:</h4>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Why would you accept or reject this password?">
+            <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Submit!</button>
+                  </span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Activity 3: Q3 -->
+      <div class="row">
+        <div class="col-xs-8 col-sm-8 col-md-4 col-lg-5 col-xl-4">
+          <h4>Password:</h4>
+          <div class="well well-sm">YourBirthday</div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-2">
+          <button class="btn btn-success btn-xs glyphicon glyphicon-ok" style="margin-top:45px; margin-left:-20px;" onclick="thatsIncorrect()"></button>
+          <button class="btn btn-danger btn-xs glyphicon glyphicon-remove" style="margin-top:45px;" onclick="thatsCorrect()"></button>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6">
+          <h4>Explain Your Answer:</h4>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Why would you accept or reject this password?">
+            <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Submit!</button>
+                  </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <hr>
+      <div class="container-fluid" style="margin-bottom:20px;">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
+                  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
+                </button>
+            <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
+                  Tweet
+                </button>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jquery & javascript -->
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

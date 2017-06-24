@@ -1,22 +1,18 @@
-   html,
-   body {
+   html, body {
      font-family: 'Open Sans', 'Open Sans Condensed', sans-serif;
    }
 
-   h2,
-   h3,
-   h4 {
+   h2, h3, h4 {
      font-weight: bold;
    }
 
-  .btn a {
+   .btn a {
      color: white;
    }
 
    .home-body {
      width: 60%;
    }
-
 
    .role-icons {
      max-width: 250px;
@@ -28,13 +24,12 @@
    }
 
    .login-body {
-     background-color: #FAFAFA;
+     background-color: #FFFF;
    }
 
-    .container-45 {
+   .container-45 {
      width: 45%;
    }
-
 
    .jumbotron {
      background-image: url("https://www.colourbox.com/preview/16921115-thin-line-internet-of-things-white-seamless-pattern.jpg");
@@ -72,7 +67,6 @@
      margin-top: -3px;
    }
 
-
    .buttonBox {
      background: white;
      padding: 25px 25px;
@@ -94,20 +88,36 @@
      margin: 10px;
    }
 
-   #showHideCat,
-   #showHideDog,
-   #showHidePenguin {
-       width: 100%;
-       padding: 80px;
-       text-align: center;
-       background-color: white;
-       margin-top:50px;
+   #showHideCat, #showHideDog, #showHidePenguin {
+     width: 100%;
+     padding: 80px;
+     text-align: center;
+     background-color: #F8f8f8;
+     margin-top: 50px;
    }
 
-.initiallyHidden {
-  display: none;
-}
+   .initiallyHidden {
+     display: none;
+   }
 
    .well-activities {
      font-size: 30px;
+   }
+   /*Vocab Quiz Style*/
+
+   #vocabQuiz {
+     font-size: 14px;
+   }
+
+   .well-message {
+     font-size: 18px;
+   }
+   /*Highlight Text Style*/
+
+   .unhighlightedText {
+     background-color: #F9F9F9;
+   }
+
+   .highlightedText {
+     background-color: yellow;
    }

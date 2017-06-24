@@ -1,4 +1,16 @@
 /***********************************
+STUDENT VIEW: ACTIVITY 1 - POPOVERS
+************************************/
+
+$(document).ready(function() {
+  $('[data-toggle="popover"]').popover();
+  ({
+    trigger: "hover"
+  });
+});
+
+
+/***********************************
 HOME PAGE (INDEX.HTML): ONMOUSEOVER
 ************************************/
 
@@ -160,10 +172,10 @@ function hideDogPenguin() {
 STUDENT VIEW: CHOOSE A CHARACTER - LOAD CHARACTER
 ************************************/
 
-function pennyPenguinChoice() {
-  var pennyPenguinChosen = document.getElementById("pennyPenguinChosen").name;
-  document.getElementById("pennyPenguinChosen").innerHTML = pennyPenguinChosen;
-  pennyPenguinChoice();
+
+function retrievePenguinButtonValue() {
+    var penguinButton = document.getElementById("pennyPenguinChosen").value;
+    document.getElementById("pennyPenguinButtonValue").innerHTML = penguinButton;
 }
 
 
@@ -195,47 +207,108 @@ $('#myModalProfile').modal({ backdrop: 'static', keyboard: true }); // Disable e
 
 
 /***********************************
-TEST
-************************************/
-
-
-function gotosite() {
-  var activityNumber = document.getElementById("activity-numbers").value.split(',');
-  var activity = activityNumber[1];
-
-  var URL = document.event_type_selector.url_list.options[document.event_type_selector.url_list.selectedIndex].activity;
-  window.location.href = URL;
-}
-
-
-
-/***********************************
 STUDENT VIEW: ACTIVITY CHOICES
 ************************************/
 
 
-var Activities =
-    ["To Post or not to Post?","Chatting Online","Password Security","Internet Safety Infographic"] ;
+var Activities = [
+  {
+  title: "To Post or not to Post?",
+  url: "activity1.html"
 
-   function selectActivity() {
-    var activityNumber = document.getElementById("activity-numbers").value.split(',') ;
-    var activity = Activities[activityNumber[0]] ;
-    document.getElementById("activity-name").innerHTML = activity ;
-   }
+}, {
+   title:"Chatting Online",
+   url: "activity2.html"
 
-   document.getElementById("activity-numbers").onclick = selectActivity ;
+}, {
+   title: "Password Security",
+   url: "activity3.html"
+
+}, {
+   title:"Internet Safety Vocabulary Quiz",
+   url: "activity4.html"
+
+}, {
+   title:"Internet Safety Infographic",
+   url: "activity5.html"
+
+ }, {
+    title:"I've Completed all of the Activities",
+    url: "student-view.html"
+
+}];
 
 
-/***********************************
-STUDENT VIEW: ACTIVITY 1 - POPOVERS
-************************************/
+function selectActivity() {
+  var activityNumber = document.getElementById("activity-numbers").value;
+  var activity = Activities[activityNumber].title;
+  document.getElementById("activity-name").innerHTML = activity;
+}
 
-$(document).ready(function() {
-  $('[data-toggle="popover"]').popover();
-  ({
-    trigger: "hover"
-  });
-});
+document.getElementById("activity-numbers").onclick = selectActivity;
+
+
+function goToSite() {
+  var activityNumber = document.getElementById("activity-numbers").value;
+  var URL = Activities[activityNumber].url;
+  window.location.href = URL;
+}
+
+/***************************************
+Exit Activities
+****************************************/
+function exitActivities() {
+  alert ("Are you sure you want to exit?")
+}
+
+/***************************************
+Activity 6 - Highlight Text
+****************************************/
+
+// function highlightingText() {
+//     document.getElementById("highlight1").className = "highlightedText"; // Using className to highlight the text. Problem: Won't unhighlight
+// }
+//
+// function highlightingText() {
+//     document.getElementById("highlight1").classList.add("highlightedText"); // Using classList.add to highlight the text. Same Problem: Won't unhighlight
+// }
+
+function highlightingText1() {
+    document.getElementById("highlight1").classList.toggle("highlightedText");
+}
+
+function highlightingText2() {
+    document.getElementById("highlight2").classList.toggle("highlightedText");
+}
+
+function highlightingText3() {
+    document.getElementById("highlight3").classList.toggle("highlightedText");
+}
+
+function highlightingText4() {
+    document.getElementById("highlight4").classList.toggle("highlightedText");
+}
+
+function highlightingText5() {
+    document.getElementById("highlight5").classList.toggle("highlightedText");
+}
+
+
+function reprintHighlightedText() {
+  var textHighlights = document.querySelectorAll(".highlightedText");
+for (var i = 0; i < textHighlights.length; i++) {
+var highlights = textHighlights[i].innerHTML;
+}
+document.getElementById("allHighlights").innerHTML = highlights;
+}
+
+
+// function hideUnhighlightedText() {
+// var textToHide = document.getElementsByClassName("unhighlightedText");
+//     for(var i = 0; i < textToHide.length; i++){
+//         textToHide[i].style.visibility = "hidden";
+//     }
+// }
 
 /***************************************
 TEACHER DASHBOARD: SURVEY - RESET FIELDS

@@ -38,8 +38,7 @@
               </div>
               <div class="modal-body">
                 <p>What's your full name?</p>
-                <p onload="pennyPenguinChoice()"></p>
-                <form>
+                  <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Full Name" id="fullName">
                     </div>
@@ -56,32 +55,33 @@
 
 
 
-    <!-- Pick an Activity -->
+        <!-- Pick an Activity -->
 
-  <div class="container container-45">
-    <h1 align="center"><strong>Hi, <span id="printFullName"></span>!</strong></h1>
-    <h3 align="center">Pick an activity from the drop down menu:</h3>
-<br>
-<div class="row">
-<form name="event_type_selector" method="post" action="#">
-   <select id="activity-numbers" class="form-control event-type-selector-dropdown" name="url_list">
-     <option value="" selected="selected" disabled="disabled">Select an activity...</option>
-     <option value="0, index.html" >Activity 1: </option>
-     <option value="1, login-page.html" >Activity 2: </option>
-     <option value="2, index.html" >Activity 3: </option>
-     <option value="3, teacher-dashboard.html" >Activity 4: </option>
-   </select>
-   </form>
- </div>
- <br>
-<div class="row">
-    <div class="well" id="activity-name"></div>
-    </div>
-<button type="button" name="button" onclick="gotosite()">Submit</button>
+     <div class="container container-45">
+       <h1 align="center"><strong>Hi, <span id="printFullName"></span>!</strong></h1>
+       <h3 align="center">Pick an activity from the drop down menu:</h3>
 
-  </div>
+   <br>
+   <div class="row">
+   <form name="activity_selector" method="post" action="#">
+      <select  name="activity_list" class="form-control activity-selector-dropdown" id="activity-numbers" >
+        <option value="" selected="selected" disabled="disabled">Select an activity...</option>
+        <option value="0" >Activity 1: </option>
+        <option value="1" >Activity 2: </option>
+        <option value="2" >Activity 3: </option>
+        <option value="3" >Activity 4: </option>
+        <option value="4" >Activity 5: </option>
+      </select>
+      </form>
 
+    <br>
 
+       <div class="well" id="activity-name"></div>
+
+<button type="button" class="btn btn-success" name="button" onclick="goToSite()" style="float:right;">Go to Activity &nbsp;<span class="glyphicon glyphicon-forward" aria-hidden="true"></span></button>
+     </div>
+            </div>
+         </div>
 
 
 
@@ -95,32 +95,6 @@
   <br>
   <br>
 
-
-
-
-
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer">
-      <hr>
-      <div class="container-fluid" style="margin-bottom:20px;">
-        <div class="row">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
-            </button>
-            <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
-              Tweet
-            </button>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
 
 
   <!-- jquery & javascript -->
