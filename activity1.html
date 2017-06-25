@@ -15,8 +15,8 @@
 
 
 <body>
-  <!-- Navigation Bar -->
 
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <button type="button" class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#exitActivitiesModal"><span class="glyphicon glyphicon-remove"></span> <a href="student-view.html"> Exit Activities</a></button>
@@ -24,7 +24,6 @@
   </nav>
 
   <!-- Exit Modal -->
-
   <div class="modal fade" id="exitActivitiesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -43,6 +42,7 @@
     </div>
   </div>
 
+  <!-- Page Title & Activity Selection Dropdown -->
   <div class="container">
     <h1>Internet Safety Activities</h1>
     <span class="label label-info">Student View</span>
@@ -50,10 +50,10 @@
     <br>
     <br>
     <div class="container">
-    <div class="row">
-      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
-        <form name="activity_selector" method="post" action="#">
-          <select name="activity_list" class="form-control activity-selector-dropdown" id="activity-numbers">
+      <div class="row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+          <form name="activity_selector" method="post" action="#">
+            <select name="activity_list" class="form-control activity-selector-dropdown" id="activity-numbers">
               <option value="" selected="selected" disabled="disabled">Select an activity...</option>
               <option value="0" >Activity 1: To Post or not to Post?  </option>
               <option value="1" >Activity 2: Chatting Online </option>
@@ -63,94 +63,91 @@
               <option value="5" >Activity 6: Internet Safety Infographic</option>
               <option value="6" >I've completed all of the activities!</option>
             </select>
-        </form>
+          </form>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <button type="button" class="btn btn-success" name="button" onclick="goToSite()">Submit</button>
+          <br>
+          <br>
+        </div>
       </div>
-      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-        <button type="button" class="btn btn-success" name="button" onclick="goToSite()">Submit</button>
-        <br>
-        <br>
-      </div>
-    </div>
-</div>
-  <br>
-  <br>
-  <!-- Activity 1 -->
-  <div class="container activity-box">
-    <h2>Activity 1: To Post or not to Post?</h2>
-    <hr class="hr-title">
-    <h3>Social Media Best Practices</h3>
-    <p><strong>Directions:</strong> Analyze the following social media profile page. Hover over the corresponding number to learn more about each section. Determine whether the information is considered RISKY or SAFE to place on a social media profile page.
-    </p>
-    <br/>
-    <div class="thumbnail">
-      <img src="http://i740.photobucket.com/albums/xx43/Archtech87/socialmediaprofile.png" alt="Social Media Profile Page"></div>
-
-    <div class="buttonBox">
-      <h4>&nbsp;&nbsp;Hover over the numbers to learn more about each section:</h4>
-      <br>
-      <a data-toggle="popover" title="Your Name" data-trigger="hover" data-content="Your full legal name">
-        <div class="numberCircleLeft">1</div>
-      </a>
-      <a data-toggle="popover" title="Your Birthday" data-trigger="hover" data-content="Your birthday month and day">
-        <div class="numberCircleLeft">2</div>
-      </a>
-      <a data-toggle="popover" title="Your Location" data-trigger="hover" data-content="The town you live in">
-        <div class="numberCircleLeft">3</div>
-      </a>
-      <a data-toggle="popover" title="Your Occupation" data-trigger="hover" data-content="Your job title">
-        <div class="numberCircleLeft">4</div>
-      </a>
-      <a data-toggle="popover" title="Congratulatory Post" data-trigger="hover" data-content="Congratulating a friend on their graduation!">
-        <div class="numberCircleLeft">5</div>
-      </a>
-      <a data-toggle="popover" title="Your Vacation Status" data-trigger="hover" data-content="Where you are currently on vacation">
-        <div class="numberCircleLeft">6</div>
-      </a>
-      <a data-toggle="popover" title="#BookYou'reReading" data-trigger="hover" data-content="Sharing the title of the book you are currently reading">
-        <div class="numberCircleLeft">7</div>
-      </a>
     </div>
     <br>
+    <br>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-6">
-
-        <h4 style="padding-left:50px;">1.
-            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
-
-        <h4 style="padding-left:50px;">2.
-            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
-
-        <h4 style="padding-left:50px;">3.
-            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
-        <h4 style="padding-left:50px;">4.
-            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <h4 style="padding-left:50px;">5.
-            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
-        <h4 style="padding-left:50px;">6.
-            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
-        <h4 style="padding-left:50px;">7.
-            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success">
-            </h4>
+    <!-- Activity 1 -->
+    <div class="container activity-box">
+      <h2>Activity 1: To Post or not to Post?</h2>
+      <hr class="hr-title">
+      <h3>Social Media Best Practices</h3>
+      <p><strong>Directions:</strong> Analyze the following social media profile page. Hover over the corresponding number to learn more about each section. Determine whether the information is considered RISKY or SAFE to place on a social media profile
+        page.
+      </p>
+      <br/>
+      <div class="thumbnail">
+        <img src="http://i740.photobucket.com/albums/xx43/Archtech87/socialmediaprofile.png" alt="Social Media Profile Page"></div>
+      <div class="buttonBox">
+        <h4>&nbsp;&nbsp;Hover over the numbers to learn more about each section:</h4>
+        <br>
+        <a data-toggle="popover" title="Your Name" data-trigger="hover" data-content="Your full legal name">
+          <div class="numberCircleLeft">1</div>
+        </a>
+        <a data-toggle="popover" title="Your Birthday" data-trigger="hover" data-content="Your birthday month and day">
+          <div class="numberCircleLeft">2</div>
+        </a>
+        <a data-toggle="popover" title="Your Location" data-trigger="hover" data-content="The town you live in">
+          <div class="numberCircleLeft">3</div>
+        </a>
+        <a data-toggle="popover" title="Your Occupation" data-trigger="hover" data-content="Your job title">
+          <div class="numberCircleLeft">4</div>
+        </a>
+        <a data-toggle="popover" title="Congratulatory Post" data-trigger="hover" data-content="Congratulating a friend on their graduation!">
+          <div class="numberCircleLeft">5</div>
+        </a>
+        <a data-toggle="popover" title="Your Vacation Status" data-trigger="hover" data-content="Where you are currently on vacation">
+          <div class="numberCircleLeft">6</div>
+        </a>
+        <a data-toggle="popover" title="#BookYou'reReading" data-trigger="hover" data-content="Sharing the title of the book you are currently reading">
+          <div class="numberCircleLeft">7</div>
+        </a>
       </div>
       <br>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <br>
-        <h4>Pick THREE out of the seven sections above:</h4>
-        <p>Explain why you labeled those sections as safe or risky.</p>
-        <div class="form-group">
-          <textarea class="form-control" rows="7"></textarea>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <h4 style="padding-left:50px;">1.
+            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
+          <h4 style="padding-left:50px;">2.
+            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
+          <h4 style="padding-left:50px;">3.
+            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
+          <h4 style="padding-left:50px;">4.
+            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
         </div>
-        <button type="button" class="btn btn-success" style="float:right"><a href="activity2.html">Submit</a></button>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <h4 style="padding-left:50px;">5.
+            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
+          <h4 style="padding-left:50px;">6.
+            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success"></h4>
+          <h4 style="padding-left:50px;">7.
+            <input id="toggle-one" type="checkbox" data-toggle="toggle" data-on="Risky" data-off="Safe" data-onstyle="danger" data-offstyle="success">
+            </h4>
+        </div>
+        <br>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <br>
+          <h4>Pick THREE out of the seven sections above:</h4>
+          <p>Explain why you labeled those sections as safe or risky.</p>
+          <div class="form-group">
+            <textarea class="form-control" rows="7"></textarea>
+          </div>
+          <button type="button" class="btn btn-success" style="float:right"><a href="activity2.html">Submit</a></button>
+        </div>
       </div>
     </div>
+    <br>
+    <br>
   </div>
-  <br>
-  <br>
-</div>
-</div>
+
   <!-- Footer -->
   <footer>
     <div class="footer">
@@ -158,12 +155,8 @@
       <div class="container-fluid" style="margin-bottom:20px;">
         <div class="row">
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
-            </button>
-            <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
-              Tweet
-            </button>
+            <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like</button>
+            <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">Tweet</button>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
             <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
@@ -173,7 +166,6 @@
     </div>
   </footer>
 
-
   <!-- jquery & javascript -->
   <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -181,6 +173,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="activity1.js"></script>
+  <script src="main.js"></script>
 
 </body>
 

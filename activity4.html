@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
@@ -16,8 +15,8 @@
 
 
 <body>
-  <!-- Navigation Bar -->
 
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <button type="button" class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#exitActivitiesModal"><span class="glyphicon glyphicon-remove"></span> <a href="student-view.html"> Exit Activities</a></button>
@@ -25,7 +24,6 @@
   </nav>
 
   <!-- Exit Modal -->
-
   <div class="modal fade" id="exitActivitiesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -44,7 +42,7 @@
     </div>
   </div>
 
-
+  <!-- Page Title & Activity Selection Dropdown -->
   <div class="container">
     <h1>Internet Safety Activities</h1>
     <span class="label label-info">Student View</span>
@@ -76,12 +74,14 @@
     </div>
     <br>
     <br>
+
+    <!-- Activity 4 -->
     <div class="container activity-box">
       <h2>Activity 4: Cyberethics: Do's and Dont's</h2>
       <hr class="hr-title">
       <h3>Highlight the Do's</h3>
       <p><strong>Directions:</strong> Click the sentences to highlight the ones that you think are appropriate online behaviors.</p>
-<br>
+      <br>
       <div id="highlight1" class="unhighlightedText">
         <blockquote class="blockquote" onclick="highlightingText1()">"When you type messages online, always make sure your Caps Lock key is on!"</blockquote>
       </div>
@@ -97,11 +97,11 @@
       <div id="highlight5" class="unhighlightedText">
         <blockquote class="blockquote" onclick="highlightingText5()">"Using social media and business networking sites properly can help you locate old friends and make new ones, create and maintain valuable professional contacts, and build your online reputation."</blockquote>
       </div>
-
       <button type=button class="btn btn-default" onclick="reprintHighlightedText()">Filter</button>
       <br>
       <br>
-      <div class="well"><h4>Your selected highlights:</h4><span id="allHighlights"></span></div>
+      <div class="well">
+        <h4>Your selected highlights:</h4><span id="allHighlights"></span></div>
       <br>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <h4>Analyze Your Selected Highlights</h4>
@@ -112,37 +112,34 @@
         <button type="button" class="btn btn-success" style="float:right"><a href="activity5.html">Submit</a></button>
       </div>
     </div>
-</div>
-    <!-- Footer -->
-    <footer>
-      <div class="footer">
-        <hr>
-        <div class="container-fluid" style="margin-bottom:20px;">
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
-            </button>
-              <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
-              Tweet
-            </button>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
-            </div>
-          </div>
+  </div>
+
+  <!-- Footer -->
+<footer>
+  <div class="footer">
+    <hr>
+    <div class="container-fluid" style="margin-bottom:20px;">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like</button>
+          <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">Tweet</button>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
 
-    <!-- jquery & javascript -->
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-
+  <!-- jquery & javascript -->
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script src="activity4.js"></script>
 </body>
 
 </html>

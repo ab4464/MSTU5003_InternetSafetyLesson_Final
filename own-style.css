@@ -9,13 +9,13 @@
    p {
      font-size: 14px;
    }
+   /*All buttons have white font*/
 
    .btn a {
-     color: white; /*All buttons have white font*/
+     color: white;
    }
+   /*Home Page Styles*/
 
-
-/*Home Page Styles*/
    .home-body {
      font-family: 'Dosis';
      color: black;
@@ -42,7 +42,6 @@
      color: white;
      font-family: 'Dosis';
    }
-
 
    .role-icons {
      max-width: 250px;
