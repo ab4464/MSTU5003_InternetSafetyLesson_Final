@@ -155,7 +155,7 @@ function hideDogPenguin() {
 }
 
 /**********************************************************
-STUDENT VIEW: CHOOSE A CHARACTER - LOCAL STORAGE ATTEMPT
+STUDENT VIEW: CHOOSE A CHARACTER - LOCAL STORAGE 
 ***********************************************************/
 
 function emptyLocalStorage() {
@@ -257,8 +257,6 @@ function selectActivity() {
   var activity = Activities[activityNumber].title;
   document.getElementById("activity-name").innerHTML = activity;
 }
-
-
 
 
 function goToSite() {
