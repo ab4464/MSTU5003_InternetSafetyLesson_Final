@@ -158,12 +158,17 @@ function hideDogPenguin() {
 STUDENT VIEW: CHOOSE A CHARACTER - LOCAL STORAGE ATTEMPT
 ***********************************************************/
 
-function retrievePenguinButtonValue() {
-  var penguinButton = document.getElementById("pennyPenguinChosen").value;
-  document.getElementById("pennyPenguinButtonValue").innerHTML = penguinButton;
-
+function setPenguinButtonValue() {
+  var penguinButton = document.getElementById("pennyPenguinChosen").value; //Retrieves value of button
+  document.getElementById("pennyPenguinButtonValue").innerHTML = penguinButton; //Prints value of button
+  var selectedCharacter = JSON.stringify(penguinButton);
+  localStorage.setItem("character", selectedCharacter);
 }
 
+function retrievePenguinButtonValue() {
+  var selectedCharacter = localStorage.getItem("character");
+  document.getElementById("printPennyPenguin").innerHTML = selectedCharacter;
+}
 
 
 
