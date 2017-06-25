@@ -155,7 +155,7 @@ function hideDogPenguin() {
 }
 
 /**********************************************************
-STUDENT VIEW: CHOOSE A CHARACTER - LOCAL STORAGE 
+STUDENT VIEW: CHOOSE A CHARACTER - LOCAL STORAGE
 ***********************************************************/
 
 function emptyLocalStorage() {
@@ -188,6 +188,7 @@ function retrieveCharacterButtonValue() {
   // alert(selectedCharacter);
   document.getElementById("printCharacterName").innerHTML = selectedCharacter;
 }
+
 
 
 
@@ -247,7 +248,7 @@ var Activities = [{
 
 }, {
   title: "I've Completed all of the Activities",
-  url: "student-view.html"
+  url: "student-activities-complete.html"
 
 }];
 

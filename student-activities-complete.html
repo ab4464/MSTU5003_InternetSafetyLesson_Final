@@ -16,115 +16,40 @@
 
 
 <body>
+    <!--Navigation Menu -->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
-      <button type="button" class="btn navbar-btn btn-primary"> <a href="login-page.html">Login</a></button>
-      <button type="button" class="btn navbar-btn btn-info"><a href="student-view.html">Student View</a></button>
-      <button type="button" class="btn navbar-btn btn-success"> <a href="teacher-dashboard.html">Teacher Dashboard</a></button>
+      <button type="button" class="btn navbar-btn btn-info "><span class="glyphicon glyphicon-chevron-left"></span> <a href="activity6.html"> Go Back</a></button>
     </div>
   </nav>
-  <div class="container home-body">
+
+  <!--Congratulations Message -->
+  <div class="container home-body" align="center">
     <h1 align="center"><strong>Congratulations! You've completed all of the activities!</strong></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor iat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    <h3 align="center">Choose Your Character:</h3>
-  </div>
-  <br>
-
-  <!-- Choose Your Character -->
-
-  <div class="container" align="center">
-    <div class="row" align="center">
-      <div class="col-md-4">
-
-        <img onclick="showHideCat()" onmouseover="catIconRollOver(this)" onmouseout="catIconRollOut(this)" class="role-icons" src="http://i740.photobucket.com/albums/xx43/Archtech87/Cat.Gray.png">
-        <div class="caption">
-          <h4>Cassie the Cat</h4>
+    <br>
+    <br>
+    <br>
+    <div class="container" align="center">
+      <div class="row" align="center">
+        <div class="col-md-12">
+          <img src="http://i740.photobucket.com/albums/xx43/Archtech87/Congratulations.png">
         </div>
+        <p>&nbsp;</p>
+        <button type="button" class="btn navbar-btn btn-success" style="font-family: Open Sans"><a href="student-view.html">Internet Safety Home Page</a></button>
       </div>
-      <div class="col-md-4">
-        <img onclick="showHideDog()" onmouseover="dogIconRollOver(this)" onmouseout="dogIconRollOut(this)" class="role-icons" src="http://i740.photobucket.com/albums/xx43/Archtech87/bulldog.Gray.png">
-        <div class="caption">
-          <h4>Brutus the Bulldog</h4>
-        </div>
-        </div>
-        <div class="col-md-4">
-          <img onclick="showHidePenguin()" onmouseover="penguinIconRollOver(this)" onmouseout="penguinIconRollOut(this)" class="role-icons" src="http://i740.photobucket.com/albums/xx43/Archtech87/penguin.gray.png">
-          <div class="caption">
-            <h4>Penny the Penguin</h4>
-          </div>
-        </div>
-
-      </div>
-
-      <div id="showHideCat" class="initiallyHidden" class="row" align="center">
-          <img src="http://i740.photobucket.com/albums/xx43/Archtech87/Cat.png">
-          <div class="caption">
-            <h4>Cassie the Cat!</h4>
-          </div>
-
-          <div class="panel panel-info" style="margin-top: 20px;">
-            <div class="panel-heading">
-              <h3 class="panel-title ">Read Cassie's Profile:  </h3>
-            </div>
-            <div class="panel-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor iat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
-              <button class="btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-forward" ></span><a href="start-activities.html">&nbsp;I Choose Cassie!</a></button>
-            </div>
-          </div>
-      </div>
-
-
-      <div id="showHideDog" class="initiallyHidden" class="row" align="center">
-            <img src="http://i740.photobucket.com/albums/xx43/Archtech87/bulldog.png">
-            <div class="caption">
-              <h4>Brutus the Dog!</h4>
-            </div>
-
-            <div class="panel panel-info" style="margin-top: 20px;">
-              <div class="panel-heading">
-                <h3 class="panel-title ">Read Brutus' Profile:  </h3>
-              </div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor iat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
-                <button class="btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-forward" ></span><a href="start-activities.html">&nbsp;I Choose Brutus!</a></button>
-              </div>
-            </div>
-        </div>
-
-      <div id="showHidePenguin" class="initiallyHidden" class="row" align="center">
-                <img src="http://i740.photobucket.com/albums/xx43/Archtech87/penguin.png">
-              <div class="caption">
-                <h4>Penny the Penguin!</h4>
-              </div>
-
-              <div class="panel panel-info" style="margin-top: 20px;">
-                <div class="panel-heading">
-                  <h3 class="panel-title ">Read Penny's Profile:  </h3>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor iat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
-                  <button class="btn btn-info btn-lg" role="button" id="pennyPenguinChosen" value="Penny the Penguin" onclick="retrievePenguinButtonValue()"><a href="start-activities.html"><span class="glyphicon glyphicon-forward" ></span>&nbsp;I Choose Penny!</a></button>
-                </div>
-
-              </div>
-          </div>
-
+      <br>
     </div>
+  </div>
 
-
-
-
-
-
-
-    <!-- jquery & javascript -->
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+  <!-- jquery & javascript -->
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 
 
 </body>
+
 </html>
