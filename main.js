@@ -330,10 +330,11 @@ function resetSurvey(event) {
   for (var checkbox of checkboxEls) {
     checkbox.checked = false;
   }
+
   var textareaEl = document.querySelector('#why');
   textareaEl.value = "";
 
-  var textinputE1 = document.querySelector('#other');
+  var textinputE1 = document.querySelector('#otherInput');
   textinputE1.value = "";
 
 }

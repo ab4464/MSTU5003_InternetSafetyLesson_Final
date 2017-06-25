@@ -7,6 +7,8 @@
 </head>
 
 <body>
+
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <button type="button" class="btn navbar-btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> <a href="index.html">Back to Homepage</a></button>
@@ -15,7 +17,6 @@
   </nav>
 
   <!-- Title & Blockquote -->
-
   <div class="container">
     <h1>Internet Safety Lesson</h1>
     <span class="label label-success">Teacher Dashboard</span>
@@ -26,7 +27,6 @@
   </div>
 
   <!-- Lesson Introduction -->
-
   <div class="container-fluid teacher-banner">
     <div class="container">
       <div class="row">
@@ -85,9 +85,8 @@
           <p>This lesson is designed to be partly teacher-led but mostly student-led. Using "Student View," students will first be introduced to the topic of internet safety through a synchronous teacher-led slide presentation that students can access through
             the main banner. Teachers will then review the learning objectives of this lesson and once again students can follow along through their "student view." Students will then be asked to read an informative paragraph about how to stay safe online
             and then will be asked to review three separate resources that will help them learn more about specific issues relating to internet safety. This portion can be done in class or during the student's own time. Once students finish viewing the
-            resources they will be asked to complete two activities which will act as formative assessments. These two activities are built directly into the "student view." Finally students will complete a final project to demonstrate their knowledge.
-            They will post the link to their finished URL on the "student view" page. This lesson can be completed over a series of days, it can be used to enhance other lessons that the teacher may give in class, or it can be done completely asynchronously
-            if teachers record their initial "lecture" with the provided slides.</p>
+            resources they will be asked to complete five activities which will act as formative assessments. These five activities are built directly into the "student view." Finally students will complete a final project to demonstrate their knowledge.
+            This lesson can be completed over a series of days, it can be used to enhance other lessons that the teacher may give in class, or it can be done completely asynchronously if teachers record their initial "lecture" with the provided slides.</p>
         </div>
       </div>
     </div>
@@ -143,7 +142,7 @@
                   View: View These Resources: Creating Strong Passwords)</li>
                 <li>Students will watch the video: <a href="https://youtu.be/MmfiHdQ4Wfs">  “Perspectives on Chatting Safely Online” </a> and will focus on identifying safe and unsafe online behaviors. (Student View: View These Resources: Staying Safe on
                   Social Media)</li>
-                <li>Students will complete Activity 1: To Post or not to Post</li>
+                <li>Students will complete the Internet Safety Activities</li>
               </ol>
             </div>
           </div>
@@ -153,7 +152,7 @@
             <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
         Instructional Tools</a>
-      </h4>
+            </h4>
           </div>
           <div id="collapse4" class="panel-collapse collapse">
             <div class="panel-body">
@@ -210,7 +209,6 @@
 
 
     <!-- Teacher Survey -->
-
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -224,8 +222,10 @@
               </div>
             </div>
             <div class="panel-body">
+              <!-- Start Form -->
               <form>
                 <div class="form-group">
+                  <!-- Grade level Dropdown -->
                   <label for="gradeLevel">What grade level do you teach?</label>
                   <select onchange="dropDownSelection()" id="gradeLevel" class="form-control">
                     <option value="" disabled selected>Select from these ranges:</option>
@@ -234,138 +234,118 @@
                     <option value="Grades 9 to 12">Grades 9 - 12</option>
                   </select>
                 </div>
+                <!-- Class Subjects Checkboxes -->
                 <div id="classSubjects" class="form-group" onchange="checkboxSelection()">
                   <label>What subject(s) do you teach?</label>
-
                   <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="Health"> Health
-                    </label>
+                    <label><input type="checkbox" value="Health"> Health</label>
                   </div>
                   <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="Physical Education"> Physical Education
-                    </label>
+                    <label><input type="checkbox" value="Physical Education"> Physical Education</label>
                   </div>
                   <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="Technology"> Technology
-                    </label>
+                    <label><input type="checkbox" value="Technology"> Technology</label>
                   </div>
                   <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="Business"> Business
-                    </label>
+                    <label><input type="checkbox" value="Business"> Business</label>
                   </div>
                   <div class="checkbox form-inline">
-                    <label>
-                      <input type="checkbox" value="">
-
-                      <input onchange="otherAreaResponse()" type="text" id="otherInput" placeholder="&nbsp;Other Subject Area">
-                    </label>
+                    <label><input type="checkbox" value="">
+                      <input onchange="otherAreaResponse()" type="text" id="otherInput" placeholder="&nbsp;Other Subject Area"></label>
                   </div>
-
                 </div>
+                <!-- Curriculum Radio Buttons -->
                 <div class="form-group" onchange="radioButtonSelection()">
                   <label>Is Internet Safety a required unit in your curriculum?</label>
                   <div class="radio">
-                    <label>
-                      <input type="radio" name="requiredUnit" value="Yes"> Yes
-                    </label>
+                    <label><input type="radio" name="requiredUnit" value="Yes">Yes</label>
                   </div>
                   <div class="radio">
-                    <label>
-                      <input type="radio" name="requiredUnit" value="No"> No
-                    </label>
+                    <label><input type="radio" name="requiredUnit" value="No">No</label>
                   </div>
                 </div>
+                <!-- Curriculum Radio Buttons -->
                 <div class="form-group" onchange="textAreaResponse()">
                   <label for="why">Why do you think it's important to teach internet safety?</label>
-                  <textarea  id="why" class="form-control" placeholder="Enter your reasons here"></textarea>
+                  <textarea id="why" class="form-control" placeholder="Enter your reasons here"></textarea>
                 </div>
                 <div class="form-group">
-                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" style="float:right" >Submit</button>
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" style="float:right">Submit</button>
                   <button type="button" class="btn btn-danger" onclick="resetSurvey(event)">Reset</button>
                 </div>
-</form>
+              </form>
 
-
-<!-- Modal -->
-
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Is this information correct?</h4>
-                      </div>
-                      <div class="modal-body">
-                        <p><strong>I teach:</strong>&nbsp; <span id="results"></span></p>
-                        <p><strong>I teach these subjects:</strong> &nbsp;<span id="results2"></span>, <span id="results4"></span></p>
-                        <p><strong>Is internet safety required in your curriculum?</strong>:&nbsp;<span id="results3"></span></p>
-                        <p><strong>I think teaching internet safety is important because...</strong>&nbsp;<span id="results5"></span></p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">No, Go Back</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Yes, Submit</button>
-                      </div>
+              <!-- Modal Survey Submit-->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Is this information correct?</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><strong>I teach:</strong>&nbsp; <span id="results"></span></p>
+                      <p><strong>I teach these subjects:</strong> &nbsp;<span id="results2"></span>, <span id="results4"></span></p>
+                      <p><strong>Is internet safety required in your curriculum?</strong>:&nbsp;<span id="results3"></span></p>
+                      <p><strong>I think teaching internet safety is important because...</strong>&nbsp;<span id="results5"></span></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">No, Go Back</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#thankYouModal">Yes, Submit</button>
                     </div>
                   </div>
                 </div>
+              </div>
 
-
-                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Thank you so much for your response!</h4>
-                      </div>
-
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"onclick="resetSurvey(event)">OK</button>
-                      </div>
+              <!-- Modal Thank you Message -->
+              <div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Thank you so much for your response!</h4>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal" onclick="resetSurvey(event)">OK</button>
                     </div>
                   </div>
                 </div>
+              </div>
+              <!-- Closing div tags -->
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer">
-        <hr>
-        <div class="container-fluid" style="margin-bottom:20px;">
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <hr>
+      <div class="container-fluid" style="margin-bottom:20px;">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
                 <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
-              </button>
-              <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
+            </button>
+            <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
                 Tweet
-              </button>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
-            </div>
+            </button>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-
-
-
-    <!-- jquery & javascript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+  <!-- jquery & javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 
 </body>
+
 </html>
