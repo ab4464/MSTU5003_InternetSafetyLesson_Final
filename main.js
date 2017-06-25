@@ -158,18 +158,36 @@ function hideDogPenguin() {
 STUDENT VIEW: CHOOSE A CHARACTER - LOCAL STORAGE ATTEMPT
 ***********************************************************/
 
+function emptyLocalStorage() {
+  localStorage.clear();
+}
+
 function setPenguinButtonValue() {
   var penguinButton = document.getElementById("pennyPenguinChosen").value; //Retrieves value of button
-  document.getElementById("pennyPenguinButtonValue").innerHTML = penguinButton; //Prints value of button
-  var selectedCharacter = JSON.stringify(penguinButton);
+  // document.getElementById("pennyPenguinButtonValue").innerHTML = penguinButton; //Prints value of button
+  selectedCharacter = JSON.stringify(penguinButton);
   localStorage.setItem("character", selectedCharacter);
 }
 
-function retrievePenguinButtonValue() {
-  var selectedCharacter = localStorage.getItem("character");
-  document.getElementById("printPennyPenguin").innerHTML = selectedCharacter;
+function setCatButtonValue() {
+  var catButton = document.getElementById("cassieCatChosen").value; //Retrieves value of button
+  // document.getElementById("cassieCatButtonValue").innerHTML = catButton; //Prints value of button
+  selectedCharacter = JSON.stringify(catButton);
+  localStorage.setItem("character", selectedCharacter);
 }
 
+function setDogButtonValue() {
+  var dogButton = document.getElementById("brutusDogChosen").value; //Retrieves value of button
+  // document.getElementById("brutusDogButtonValue").innerHTML = dogButton; //Prints value of button
+  selectedCharacter = JSON.stringify(dogButton);
+  localStorage.setItem("character", selectedCharacter);
+}
+
+function retrieveCharacterButtonValue() {
+  var selectedCharacter = localStorage.getItem("character");
+  // alert(selectedCharacter);
+  document.getElementById("printCharacterName").innerHTML = selectedCharacter;
+}
 
 
 

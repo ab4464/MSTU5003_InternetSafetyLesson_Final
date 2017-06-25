@@ -15,7 +15,7 @@
 </head>
 
 
-<body>
+<body onload="emptyLocalStorage()">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
@@ -75,7 +75,7 @@
         <div class="panel-body">
           <p>Cassie the Cat is a very popular cat at school. She has a lot of friends on social media and she loves posting daily updates about herself on social media. Cassie constantly uses her cell phone to take pictures and her goal is to become a famous
             photographer. </p>
-          <button class="btn btn-info btn-lg" role="button"><span class="glyphicon glyphicon-forward" ></span><a href="start-activities.html">&nbsp;I Choose Cassie!</a></button>
+          <button class="btn btn-info btn-lg" role="button" id="cassieCatChosen" value="Cassie the Cat" onclick="setCatButtonValue()"><span class="glyphicon glyphicon-forward" ></span><a href="start-activities.html">&nbsp;I Choose Cassie!</a></button>
         </div>
       </div>
     </div>
@@ -93,7 +93,7 @@
         <div class="panel-body">
           <p>Brutus the Bulldog has a reputation of being the tough guy at school. He has a lot of friends, but some students are afraid of him because of his tendency to get into fights. What most students don't know about Brutus is that he is usually the
             guy defending kids from the bullies at school. Brutus doesn't like his reputation of being the school tough guy, but he doesn't know what to do about it.</p>
-          <button class="btn btn-info btn-lg" role="button"><span class="glyphicon glyphicon-forward" ></span><a href="start-activities.html">&nbsp;I Choose Brutus!</a></button>
+          <button class="btn btn-info btn-lg" role="button" id="brutusDogChosen" value="Brutus the Dog" onclick="setDogButtonValue()" ><span class="glyphicon glyphicon-forward" ></span><a href="start-activities.html">&nbsp;I Choose Brutus!</a></button>
         </div>
       </div>
     </div>
@@ -111,8 +111,7 @@
         <div class="panel-body">
           <p>Penny the Penguin is an avid reader. She loves going online to read the latest fan-fiction and she is always on forums talking to other fellow book-lovers about the books she's reading. She has recently met a fellow book-lover online that she
             has been talking to almost every day. She really wants to meet the fellow book-lover in person. </p>
-          <button class="btn btn-info btn-lg" role="button" id="pennyPenguinChosen" value="Penny the Penguin" onclick="setPenguinButtonValue()"><a href="start-activities.html"><span class="glyphicon glyphicon-forward" ></span>&nbsp;I Choose Penny!</a></button>
-<p id="pennyPenguinButtonValue"></p>
+          <button class="btn btn-info btn-lg" role="button" id="pennyPenguinChosen" value="Penny the Penguin" onclick="setPenguinButtonValue()"><span class="glyphicon glyphicon-forward" ></span><a href="start-activities.html">&nbsp;I Choose Penny!</a></button>
         </div>
       </div>
     </div>

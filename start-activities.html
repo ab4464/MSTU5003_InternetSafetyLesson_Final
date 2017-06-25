@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="own-style.css">
 </head>
 
-<body class="login-body">
+<body class="login-body" onload="retrieveCharacterButtonValue()">
   <!-- Navigation Menu-->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
@@ -30,7 +30,7 @@
           <h4 class="modal-title" id="myModalLabel">User Profile</h4>
         </div>
         <div class="modal-body">
-          <p onload="retrievePenguinButtonValue()" id="printPennyPenguin"></p>
+          <p> You Chose: <span id="printCharacterName"></span></p>
           <p>What's your full name?</p>
           <form>
             <div class="form-group">
@@ -49,6 +49,7 @@
   <!-- Pick an Activity -->
   <div class="container container-45">
     <h1 align="center"><strong>Hi, <span id="printFullName"></span>!</strong></h1>
+    <p id="printPennyPenguin"></p>
     <h3 align="center">Pick an activity from the drop down menu:</h3>
     <br>
     <div class="row">
