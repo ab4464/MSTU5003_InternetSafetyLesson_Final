@@ -7,12 +7,38 @@
    }
 
    .btn a {
-     color: white;
+     color: white; /*All buttons have white font*/
    }
 
+
+/*Home Page Styles*/
    .home-body {
      font-family: 'Dosis';
+     color: black;
    }
+
+   .home-banner {
+     background-color: #4DD0E2;
+     background-size: cover;
+     width: auto;
+     height: auto;
+     margin-top: -20px;
+     border-top: solid #E6E6E6 1px;
+     color: white;
+     font-family: 'Dosis';
+   }
+
+   .home-bottom-banner {
+     background-color: #4DD0E2;
+     background-size: cover;
+     width: auto;
+     height: auto;
+     margin-bottom: -20px;
+     font-size: 36px;
+     color: white;
+     font-family: 'Dosis';
+   }
+
 
    .role-icons {
      max-width: 250px;
@@ -23,9 +49,7 @@
      width: 60%;
    }
 
-   .login-body {
-     background-color: #FFFF;
-   }
+  
 
    .container-45 {
      width: 45%;
@@ -40,25 +64,6 @@
      background: white;
      opacity: 0.96;
      padding: 25px 25px;
-   }
-
-   .home-banner {
-     background-color: #4DD0E2;
-     background-size: cover;
-     width: auto;
-     height: 560px;
-     margin-top: -20px;
-     border-top: solid #E6E6E6 1px;
-     color: white;
-     font-family: 'Dosis';
-   }
-
-   .home-body-banner {
-     background-color: #4DD0E2;
-     background-size: cover;
-     width: auto;
-     height: 400px;
-     margin-bottom: -20px;
    }
 
    .teacher-banner {
