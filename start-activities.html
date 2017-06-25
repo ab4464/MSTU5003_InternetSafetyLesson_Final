@@ -12,90 +12,62 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="own-style.css">
-
 </head>
 
-
 <body class="login-body">
+  <!-- Navigation Menu-->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
-      <button type="button" class="btn navbar-btn btn-primary"> <a href="login-page.html">Login</a></button>
-      <button type="button" class="btn navbar-btn btn-info"><a href="student-view.html">Student View</a></button>
-      <button type="button" class="btn navbar-btn btn-success"> <a href="teacher-dashboard.html">Teacher Dashboard</a></button>
+      <button type="button" class="btn navbar-btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> <a href="student-view.html">Back to Student Page</a></button>
     </div>
   </nav>
 
-
-    <!-- About The User - Modal Login-->
-
-
-    <div class="modal fade" id="myModalProfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-
-                <h4 class="modal-title" id="myModalLabel">User Profile</h4>
-              </div>
-              <div class="modal-body">
-                <p>What's your full name?</p>
-                  <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Full Name" id="fullName">
-                    </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button id="goBack" type="button" class="btn btn-danger"><a href="character-directory.html">Go Back</a></button>
-                <button id="submitName" type="submit" class="btn btn-success" onclick="fullNameResponse()" data-dismiss="modal" href="#">Submit</button>
-              </div>
-            </div>
-          </div>
+  <!-- About The User - Modal Login-->
+  <div class="modal fade" id="myModalProfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">User Profile</h4>
         </div>
+        <div class="modal-body">
+          <p>What's your full name?</p>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Full Name" id="fullName">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="goBack" type="button" class="btn btn-danger"><a href="character-directory.html">Go Back</a></button>
+          <button id="submitName" type="submit" class="btn btn-success" onclick="fullNameResponse()" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-
-        <!-- Pick an Activity -->
-
-     <div class="container container-45">
-       <h1 align="center"><strong>Hi, <span id="printFullName"></span>!</strong></h1>
-       <h3 align="center">Pick an activity from the drop down menu:</h3>
-
-   <br>
-   <div class="row">
-   <form name="activity_selector" method="post" action="#">
-      <select  name="activity_list" class="form-control activity-selector-dropdown" id="activity-numbers" >
+  <!-- Pick an Activity -->
+  <div class="container container-45">
+    <h1 align="center"><strong>Hi, <span id="printFullName"></span>!</strong></h1>
+    <h3 align="center">Pick an activity from the drop down menu:</h3>
+    <br>
+    <div class="row">
+      <form name="activity_selector" method="post" action="#">
+        <select name="activity_list" class="form-control activity-selector-dropdown" id="activity-numbers">
         <option value="" selected="selected" disabled="disabled">Select an activity...</option>
         <option value="0" >Activity 1: </option>
         <option value="1" >Activity 2: </option>
         <option value="2" >Activity 3: </option>
         <option value="3" >Activity 4: </option>
         <option value="4" >Activity 5: </option>
+        <option value="5" >Final Project: </option>
       </select>
       </form>
-
-    <br>
-
-       <div class="well" id="activity-name"></div>
-
-<button type="button" class="btn btn-success" name="button" onclick="goToSite()" style="float:right;">Go to Activity &nbsp;<span class="glyphicon glyphicon-forward" aria-hidden="true"></span></button>
-     </div>
-            </div>
-         </div>
-
-
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
+      <br>
+      <div class="well" id="activity-name"></div>
+      <button type="button" class="btn btn-success" name="button" onclick="goToSite()" style="float:right;">Go to Activity &nbsp;<span class="glyphicon glyphicon-forward" aria-hidden="true"></span></button>
+    </div>
+  </div>
+  </div>
 
   <!-- jquery & javascript -->
   <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>

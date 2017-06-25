@@ -6,6 +6,10 @@
      font-weight: bold;
    }
 
+   p {
+     font-size: 14px;
+   }
+
    .btn a {
      color: white; /*All buttons have white font*/
    }
@@ -48,8 +52,6 @@
    .icon-box {
      width: 60%;
    }
-
-  
 
    .container-45 {
      width: 45%;
