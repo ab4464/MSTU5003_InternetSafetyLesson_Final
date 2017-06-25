@@ -154,9 +154,9 @@ function hideDogPenguin() {
   }
 }
 
-/***********************************
+/**********************************************************
 STUDENT VIEW: CHOOSE A CHARACTER - LOCAL STORAGE ATTEMPT
-************************************/
+***********************************************************/
 
 function retrievePenguinButtonValue() {
   var penguinButton = document.getElementById("pennyPenguinChosen").value;
@@ -233,9 +233,8 @@ function selectActivity() {
   var activityNumber = document.getElementById("activity-numbers").value;
   var activity = Activities[activityNumber].title;
   document.getElementById("activity-name").innerHTML = activity;
-  
 }
-document.getElementById("activity-numbers").onclick = selectActivity;
+
 
 
 
