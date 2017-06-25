@@ -15,7 +15,7 @@ HOME PAGE (INDEX.HTML): ONMOUSEOVER
 ************************************/
 
 function studentIconRollOver(student_icon) {
-  student_icon.src = 'http://i740.photobucket.com/albums/xx43/Archtech87/StudentIcon.png';
+  student_icon.src = 'http://i740.photobucket.com/albums/xx43/Archtech87/StudentIcon_1.png';
 }
 
 
@@ -24,7 +24,7 @@ function studentIconRollOut(student_icon) {
 }
 
 function teacherIconRollOver(teacher_icon) {
-  teacher_icon.src = 'http://i740.photobucket.com/albums/xx43/Archtech87/TeacherIcon.png';
+  teacher_icon.src = 'http://i740.photobucket.com/albums/xx43/Archtech87/TeacherIcon_1.png';
 }
 
 
@@ -224,13 +224,17 @@ var Activities = [
    title: "Password Security",
    url: "activity3.html"
 
+ }, {
+    title: "Cyberethics: Do's and Dont's",
+    url: "activity4.html"
+
 }, {
    title:"Internet Safety Vocabulary Quiz",
-   url: "activity4.html"
+   url: "activity5.html"
 
 }, {
    title:"Internet Safety Infographic",
-   url: "activity5.html"
+   url: "activity6.html"
 
  }, {
     title:"I've Completed all of the Activities",

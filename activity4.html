@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="own-style.css">
 </head>
+
 
 <body>
   <!-- Navigation Bar -->
@@ -58,76 +60,79 @@
               <option value="0" >Activity 1: To Post or not to Post?  </option>
               <option value="1" >Activity 2: Chatting Online </option>
               <option value="2" >Activity 3: Password Security </option>
-              <option value="3" >Activity 4: Internet Safety Vocabulary Quiz </option>
-              <option value="4" >Activity 5: Internet Safety Infographic</option>
-              <option value="5" >I've completed all of the activities!</option>
+              <option value="3" >Activity 4: Cyberethics: Do's and Dont's </option>
+              <option value="4" >Activity 5: Internet Safety Vocabulary Quiz</option>
+              <option value="5" >Activity 6: Internet Safety Infographic</option>
+              <option value="6" >I've completed all of the activities!</option>
             </select>
           </form>
         </div>
         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
           <button type="button" class="btn btn-success" name="button" onclick="goToSite()">Submit</button>
-
-
           <br>
           <br>
-
         </div>
       </div>
     </div>
     <br>
     <br>
-
-    <!-- Internet Safety Vocabulary Quiz -->
-
-
-      <div class="container activity-box">
-        <h2>Activity 4: Internet Safety Vocabulary Quiz</h2>
-        <hr class="hr-title">
-        <h3>Test Your Vocabulary</h3>
-        <p><strong>Directions:</strong> Take this quiz to see how well you understand internet safety vocabulary.</p>
-        <br/>
-        <div id="vocabQuiz"></div>
-        <br>
-        <button type="button" class="btn btn-success" name="checkAnswerButton" id="submitQuiz">How did I do?</button>
-        <button type="button" class="btn btn-danger" name="resetButton" value="Refresh Page" onClick="window.location.reload()">Reset</button>
-        <p>&nbsp;</p>
-        <div id="vocabQuizResults"></div>
+    <div class="container activity-box">
+      <h2>Activity 4: Cyberethics: Do's and Dont's</h2>
+      <hr class="hr-title">
+      <h3>Highlight the Do's</h3>
+      <p><strong>Directions:</strong> Click the sentences to highlight the ones that you think are appropriate online behaviors.</p>
+<br>
+      <div id="highlight1" class="unhighlightedText">
+        <blockquote class="blockquote" onclick="highlightingText1()">"Piece of Text 1"</blockquote>
       </div>
-</div>
-<br>
-<br>
+      <div id="highlight2" class="unhighlightedText">
+        <blockquote class="blockquote" onclick="highlightingText2()">"Piece of Text 2"</blockquote>
+      </div>
+      <div id="highlight3" class="unhighlightedText">
+        <blockquote class="blockquote" onclick="highlightingText3()">"Piece of Text 3"</blockquote>
+      </div>
+      <div id="highlight4" class="unhighlightedText">
+        <blockquote class="blockquote" onclick="highlightingText4()">"Piece of Text 4"</blockquote>
+      </div>
+      <div id="highlight5" class="unhighlightedText">
+        <blockquote class="blockquote" onclick="highlightingText5()">"Piece of Text 5"</blockquote>
+      </div>
 
-      <!-- Footer -->
-      <footer>
-        <div class="footer">
-          <hr>
-          <div class="container-fluid" style="margin-bottom:20px;">
-            <div class="row">
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
-                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
-                  </button>
-                <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
-                    Tweet
-                  </button>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
-              </div>
+      <button type=button class="btn btn-default" onclick="reprintHighlightedText()">Filter</button>
+      <br>
+      <br>
+      <div class="well"><h4>Your selected highlights:</h4><span id="allHighlights"></span></div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <hr>
+        <div class="container-fluid" style="margin-bottom:20px;">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
+            </button>
+              <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
+              Tweet
+            </button>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-      <!-- jquery & javascript -->
-      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-      <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <script src="activity4.js"></script>
-      <script src="main.js"></script>
+    <!-- jquery & javascript -->
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>

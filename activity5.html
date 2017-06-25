@@ -7,13 +7,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="own-style.css">
 </head>
-
 
 <body>
   <!-- Navigation Bar -->
@@ -60,103 +58,77 @@
               <option value="0" >Activity 1: To Post or not to Post?  </option>
               <option value="1" >Activity 2: Chatting Online </option>
               <option value="2" >Activity 3: Password Security </option>
-              <option value="3" >Activity 4: Internet Safety Vocabulary Quiz </option>
-              <option value="4" >Activity 5: Internet Safety Infographic</option>
-              <option value="5" >I've completed all of the activities!</option>
+              <option value="3" >Activity 4: Cyberethics: Do's and Dont's </option>
+              <option value="4" >Activity 5: Internet Safety Vocabulary Quiz</option>
+              <option value="5" >Activity 6: Internet Safety Infographic</option>
+              <option value="6" >I've completed all of the activities!</option>
             </select>
           </form>
         </div>
         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
           <button type="button" class="btn btn-success" name="button" onclick="goToSite()">Submit</button>
+
+
           <br>
           <br>
+
         </div>
       </div>
     </div>
     <br>
     <br>
 
-    <!--Final Summative Assessment -->
-    <div class="container activity-box">
-      <h2>Project: Internet Safety Infographic</h2>
-      <hr class="hr-title">
-      <h3>Create an Infographic</h3>
-      <p><strong>Directions:</strong> Use <a href="piktochart.com">Piktochart.com</a> and create an infographic that demonstrates what you have learned about a particular issue within internet safety (Ex. Password protection, Security Settings, Malware,
-        etc...).
-        <p><strong>Infographic Requirements:</strong></p>
-        <ul>
-          <li>Introduction to the issue.</li>
-          <li>Include at least 3 pieces of statistical data or facts.</li>
-          <li>List the specific safety concerns/threats.</li>
-          <li>List safe behaviors/what the user can do.</li>
-        </ul>
-        <p><strong>Conclusion:</strong> How it will impact how you behave online? or What lessons did you learn?</p>
-        <p>**Remember an infographic is about visual representation, make sure each piece of information included on the infographic includes visuals**</p>
-        <p>See<a href="https://staysafeonline.org/teach-online-safety/resources/"> Infographic Examples</a></p>
-        <br/>
+    <!-- Internet Safety Vocabulary Quiz -->
 
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            Submit your Internet Safety Infographic here:
-          </div>
-          <div class="panel-body">
-            <form class="form-inline">
-              <div class="form-group">
-                <label for="yourName">Name: </label>
-                <input type="text" class="form-group" id="yourName" placeholder="&nbsp;Full Name">
-              </div>
-              <div class="form-group">
-                <label for="yourClassPeriod">Class Period: </label>
-                <input type="text" class="form-group" id="yourPeriod" placeholder="&nbsp;Class Period">
-              </div>
-            </form>
-            <div class="form-group">
-              <label for="yourProjectTitle">Project Title: </label>
-              <input type="text" class="form-control" id="yourProjectTitle" placeholder="Project Title">
-            </div>
-            <div class="form-group">
-              <label for="yourProjectURL">Project URL: </label>
-              <input type="text" class="form-control" id="yourProjectURL" placeholder="Project URL">
-            </div>
-            <button type="button" class="btn btn-primary" style="float: right;">Submit</button>
-          </div>
-        </div>
-    </div>
+
+      <div class="container activity-box">
+        <h2>Activity 5: Internet Safety Vocabulary Quiz</h2>
+        <hr class="hr-title">
+        <h3>Test Your Vocabulary</h3>
+        <p><strong>Directions:</strong> Take this quiz to see how well you understand internet safety vocabulary.</p>
+        <br/>
+        <div id="vocabQuiz"></div>
+        <br>
+        <button type="button" class="btn btn-success" name="checkAnswerButton" id="submitQuiz">How did I do?</button>
+        <button type="button" class="btn btn-danger" name="resetButton" value="Refresh Page" onClick="window.location.reload()">Reset</button>
+        <p>&nbsp;</p>
+        <div id="vocabQuizResults"></div>
+      </div>
 </div>
 <br>
 <br>
 
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer">
-        <hr>
-        <div class="container-fluid" style="margin-bottom:20px;">
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
-                  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
-                </button>
-              <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
-                  Tweet
-                </button>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <hr>
+          <div class="container-fluid" style="margin-bottom:20px;">
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
+                  </button>
+                <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
+                    Tweet
+                  </button>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
-    <!-- jquery & javascript -->
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+      <!-- jquery & javascript -->
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="activity5.js"></script>
+      <script src="main.js"></script>
 
-</body>
+  </body>
 
-</html>
+  </html>
