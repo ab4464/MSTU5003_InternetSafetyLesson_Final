@@ -1,4 +1,4 @@
-# MSTU5003_InternetSafetyLesson_Final - Jennifer Foung - Summer 2017
+# Internet Safety Lesson Final - MSTU5003 - Jennifer Foung - Summer 2017
 
 ## Final Project Link
 Link to demonstration: https://jf2832.github.io/MSTU5003_InternetSafetyLesson_Final/
