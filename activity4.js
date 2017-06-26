@@ -34,9 +34,11 @@ function highlightingText5() {
 function reprintHighlightedText() {
   var textHighlights = document.querySelectorAll(".highlightedText");
   for (var i = 0; i < textHighlights.length; i++) {
-    var highlights = textHighlights[i].innerHTML;
-  }
+  var highlights = textHighlights[i].innerHTML;
   document.getElementById("allHighlights").innerHTML = highlights;
+  alert (highlights);
+  }
+
 }
 
 
