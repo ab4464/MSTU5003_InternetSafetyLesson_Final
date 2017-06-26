@@ -34,17 +34,7 @@ function highlightingText5() {
 function reprintHighlightedText() {
   var textHighlights = document.querySelectorAll(".highlightedText");
   for (var i = 0; i < textHighlights.length; i++) {
-  var highlights = textHighlights[i].innerHTML;
-  document.getElementById("allHighlights").innerHTML = highlights;
-  alert (highlights);
+    var highlights = textHighlights[i].innerHTML;
+    document.getElementById("allHighlights").innerHTML += highlights;
   }
-
 }
-
-
-// function hideUnhighlightedText() {
-// var textToHide = document.getElementsByClassName("unhighlightedText");
-//     for(var i = 0; i < textToHide.length; i++){
-//         textToHide[i].style.visibility = "hidden";
-//     }
-// }
