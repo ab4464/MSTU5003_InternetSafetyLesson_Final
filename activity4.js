@@ -38,3 +38,13 @@ function reprintHighlightedText() {
     document.getElementById("allHighlights").innerHTML += highlights;
   }
 }
+
+//Original function
+// function reprintHighlightedText() {
+//   var textHighlights = document.querySelectorAll(".highlightedText"); //document.querySelectorAll(".highlightedText") retrieves all highlights
+//   for (var i = 0; i < textHighlights.length; i++) {
+//   var highlights = textHighlights[i].innerHTML;
+//   }
+//   }
+//document.getElementById("allHighlights").innerHTML = highlights; // needed to be inside the loop
+//  alert (highlights) // used to test.. realized it needed to be inside loop
